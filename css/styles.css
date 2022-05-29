@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tag Selectors */
+
+body {
+  font-family: "League Spartan", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  margin-left: 40px;
+  background-image: url(../images/bg-pattern-top-desktop.svg),
+    url(../images/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: top left, right -2px top 145px;
+}
+h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  padding: 7px;
+  color: hsl(300, 43%, 22%);
+}
+h4 {
+  color: hsl(0, 0%, 100%);
+  line-height: 1.5;
+}
+
+/* First section */
+
+.first-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 60px;
+  margin-top: 30px;
+}
+.first-section-item-first {
+  flex: 1;
+}
+.first-section-item-first p {
+  line-height: 1.5;
+  padding: 3px;
+  color: hsl(303, 10%, 53%);
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+/* Star Section */
+
+.star-container {
+  display: flex;
+  flex-direction: column;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 2;
+  margin-top: 10px;
+}
+.star-container span {
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+  font-size: 1.063rem;
+}
+.star-container-item {
+  display: flex;
+  align-items: center;
+  margin: 8px 20px;
+  background-color: hsl(300, 24%, 96%);
+  width: 445px;
+  height: 50px;
+  border-radius: 8px;
+}
+.star-container-item-second {
+  margin-left: 140px;
+}
+.star-container-item-third {
+  margin-left: 260px;
+}
+.stars-img {
+  margin: 0 30px;
+}
+.stars-img img {
+  padding: 3px;
+}
+
+/* Last Section */
+
+.last-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 70px;
+}
+.last-section p {
+  font-weight: 400;
+  color: hsl(0, 0%, 100%);
+  line-height: 1.5;
+  margin: 0 33px;
+}
+#colton {
+  padding: 0 5px;
+}
+.last-section-item {
+  background-color: hsl(300, 43%, 22%);
+  margin: 15px;
+  border-radius: 8px;
+  height: 230px;
+}
+.last-section-item span {
+  color: hsl(300, 24%, 96%);
+}
+.last-section-item-second {
+  margin-top: 50px;
+}
+.last-section-item-third {
+  margin-top: 80px;
+}
+.last-section-img img {
+  border-radius: 100%;
+  margin: 25px;
+  height: 40px;
+}
+.last-section-img span {
+  color: hsl(333, 80%, 67%);
+}
+.last-section-img {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.customer-review {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+@media screen and (max-width: 375px) {
+  /* Tag Selectors */
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    min-height: 100vh;
+    background-image: url(../images/bg-pattern-top-mobile.svg);
+    background-repeat: no-repeat;
+  }
+  h1 {
+    font-size: 2rem;
+    padding: 20px;
+    text-align: center;
+  }
+  h4 {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+  }
+
+  /* First section */
+
+  .first-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .first-section-item-first p {
+    padding: 13px;
+    text-align: center;
+  }
+  /* Star Section */
+
+  .star-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+  }
+  .star-container-item {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+  }
+  .star-container-item-first {
+    margin-left: 0;
+  }
+  .star-container-item-second {
+    margin-left: 0;
+  }
+  .star-container-item-third {
+    margin-left: 0;
+  }
+  .star-container span {
+    font-size: 0.906rem;
+  }
+  .stars-img {
+    margin: 2px 0;
+  }
+  /* Last Section */
+
+  .last-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .last-section-item {
+    margin-top: 3px;
+    height: 220px;
+    width: 280px;
+  }
+  .last-section-img {
+    display: flex;
+    flex-direction: column;
+  }
+  .last-section p {
+    font-size: 0.813rem;
+    font-weight: 400;
+    padding: 0 3px;
+  }
+  .last-section-img {
+    display: flex;
+    flex-direction: row;
+  }
+  .last-section-img img {
+    margin: 25px 15px 20px 25px;
+  }
+  .customer-review span {
+    font-size: 0.906rem;
+  }
+}
